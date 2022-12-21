@@ -40,5 +40,5 @@ class Bar:
         text = f' {counter} [{completed}{rest}] {percent}%'
         print(text, end='\r')
 
-        if self.completed_length == self.length:
+        if self.i == self.iterations:
             print(text)
