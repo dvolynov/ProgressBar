@@ -17,7 +17,6 @@ class Bar:
         else:
             self.step = self.length / self.iterations
 
-        self.clear_length = 0
         self.completed_length = 0
 
     def next(self):
@@ -38,8 +37,8 @@ class Bar:
             else:
                 completed += '='
 
-        to_clear = '\b' * self.clear_length
-
         text = f'{counter} [{completed}{rest}] {percent}%'
-        self.clear_length = len(text) + 1
-        print(to_clear + text)
+        print(text, end='\r')
+
+        if self.completed_length == self.length:
+            print(text)
