@@ -37,7 +37,7 @@ class Bar:
             else:
                 completed += '='
 
-        text = f'\r{counter} [{completed}{rest}] {percent}%'
+        text = f'{counter} [{completed}{rest}] {percent}%\r'
         print(text, end='')
 
         if self.i == self.iterations:
