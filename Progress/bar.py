@@ -39,11 +39,9 @@ class Bar:
                 completed += '='
 
         text = f'{counter} [{completed}{rest}] {percent}%'
+        print('\b' * self.to_remove + text, end='')
 
-        print('\b' * self.to_remove)
-        
         self.to_remove = len(text)
-        print(text, end='')
 
         if self.i == self.iterations:
             print(text)
