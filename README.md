@@ -1,6 +1,6 @@
-# Progress
+# ProgressBar for Google Colab
 
-### модуль для отображения прогресса циклов   
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 ```
 from Progress import Bar
